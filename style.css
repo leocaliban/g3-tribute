@@ -148,10 +148,18 @@ nav {
   object-position: top;
 }
 
+#cristina-banner{
+  object-position: center;
+}
+
+#cristina-author{
+  left: 50%;
+}
+
 .author {
   position: absolute;
   top: 70%;
-  left: 50%;
+  left: 30%;
   transform: translate(-50%, -70%);
   color: white;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
@@ -178,6 +186,7 @@ nav {
 .story-description,
 .work-description {
   width: 50%;
+  text-align: justify;
 }
 
 .story-description h3,
@@ -206,6 +215,10 @@ nav {
     grid-template-columns: 5% 1fr 5%;
     grid-template-rows: 2fr 1fr;
     text-align: center;
+  }
+
+  .author {
+    left: 50%;
   }
 
   .hero {
@@ -251,9 +264,22 @@ nav {
 }
 
 @media (max-width: 768px) {
-
   .hero img {
     height: 400px;
+  }
+
+  .profile img {
+    width: 300px;
+  }
+
+  .story,
+  .my-work {
+    padding: 20px 0;
+  }
+
+  .story-description h3,
+  .work-description h3 {
+    text-align: center;
   }
 
   .details h1 {
